@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var num, num2, i = 0;
+
+        num = parseInt(prompt("Ingresar valor final lista"));
+        num2 = parseInt(prompt("Ingresar valor Incremento"));
+
+
+        if (num > 0 && num2 > 0) {
+
+            console.log("X:" + num);
+            console.log("Incremento:" + num2);
+
+            while (i <= num) {
+                console.log(i);
+                i += num2;
+            }
+        } else {
+            console.log("ingresó numero negativo");
+        }
+
+    </script>
+</body>
+
+</html>

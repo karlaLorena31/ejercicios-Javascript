@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var hora, temperatura,bandera;
+
+       
+
+
+        hora = parseInt(prompt("ingrese horario"));
+        bandera=0;
+
+
+
+        if (hora >= 8 && hora <= 11) {
+
+            console.log("comprar cafe")
+            bandera=1;
+        }
+
+
+        if (hora >= 12 && hora <= 13) {
+
+            temperatura = parseInt(prompt("ingrese temperatura"));
+            if (temperatura >= 20 && temperatura <= 25) {
+
+                console.log("comprar helado")
+                bandera=1;
+
+            }
+           
+
+        }
+
+        if (hora >= 14 && hora <= 16 || hora >= 20 && hora <= 22 ){
+
+            console.log("comer sandwich")
+            bandera=1;
+        }
+
+
+        if (hora == 00) {
+
+            console.log("No comer , ir a dormir")
+            bandera=1;
+        }
+
+
+
+        if(bandera==0){
+
+            console.log("Hacer nada")
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

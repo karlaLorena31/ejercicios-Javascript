@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        var n,error=0,i=0;
+
+        n=parseInt(prompt("Ingrese numero menor a 10"));
+
+        if (n>0 && n<51){
+                console.log(n);     
+        }else{
+            while( n>51) {
+                n=parseInt(prompt("Ingrese numero menor a 10"));  
+                error++;                                
+                }    console.log("numero de errores:"+ error); 
+            }
+            console.log(n);
+            
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var sueldo_liquido, sueldo_bruto, Y_retencion,a;
+
+        sueldo_liquido =4000000;
+        sueldo_bruto=0;
+        
+        Y_retencion = 10 ;
+
+
+
+        if (sueldo_liquido >= 0 && Y_retencion >= 0 && Y_retencion < 100  ) {
+
+            a=(1 - (Y_retencion / 100));
+
+            sueldo_bruto = sueldo_liquido / a;
+
+            console.log( " Mi sueldo bruto es : " + sueldo_bruto )
+        
+
+        }else{
+
+            console.log("Ingresó mal los datos")
+        }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

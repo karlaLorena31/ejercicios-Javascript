@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var notas=0, nota=0, i=0, promedio=0, numero=0;
+
+        
+        numero=parseInt(prompt("Ingrese total de notas"));
+
+
+        while(i<numero){
+            
+        notas= parseFloat(prompt("Ingrese notas a calcular"));
+
+        nota= nota + notas;
+
+        i++; 
+
+        }
+
+        promedio= nota/numero;
+
+        console.log("Su promedio es de "+ promedio);
+
+    
+    </script>
+</body>
+</html>
