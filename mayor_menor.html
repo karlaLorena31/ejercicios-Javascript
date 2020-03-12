@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var num, minimo, max, numero , Exit = "", i = 0;
+
+
+        num = parseInt(prompt("Ingrese numero")); //ingresa los numero para comparar
+
+
+        minimo = num;
+        max = num;
+
+        do {
+
+            num = (prompt("Ingrese numero")); //para ingresar Exit como palabra
+           
+
+
+            if(num ==="exit"){        
+
+                break;             
+            }
+
+
+            num =parseInt(prompt("Ingrese numero")); //convertir num en numero
+
+
+
+
+
+            /*if (numero == 0) { //para terminar el programa si se ingresa un cero
+                break;
+            }*/
+
+
+            if (max <= num) {
+                max = num;
+            }
+
+
+            if (minimo > num) {
+                minimo = num;
+            }
+            
+
+        }
+
+
+
+        while  (true);
+        console.log("Es un numero maximo" + max);
+        console.log("Es un numero minimo" + minimo);
+
+
+
+    </script>
+</body>
+
+</html>

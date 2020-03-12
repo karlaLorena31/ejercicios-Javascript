@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        var aleatorio, numero, error = 0;
+
+        aleatorio = Math.random() * 101;
+        aleatorio = Math.trunc(aleatorio);
+        console.log(aleatorio);
+
+
+        numero = parseInt(prompt("Ingrese numero pensado:"));
+
+
+        while (numero !== aleatorio) {
+
+            if (numero < aleatorio) {
+
+                numero = parseInt(prompt("Demasiado bajo, intentelo de nuevo"));
+
+            } else
+
+                numero = parseInt(prompt("Demasiado alto, intentelo de nuevo"));
+
+            error++;
+        }
+
+        if (numero === aleatorio) {
+
+            console.log("BINGO!!!!!");
+            console.log("Numero aleatorio:    " + aleatorio);
+            console.log("Numero adivinado:    " + numero);
+
+        }
+
+        console.log("Numero de intentos  " + error);
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

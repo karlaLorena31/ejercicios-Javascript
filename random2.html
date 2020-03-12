@@ -10,27 +10,30 @@
 
         var num,num2,num3,i=0,numeros="";
 
-        num=parseInt(prompt("ingrese numero:"));
-        num2=parseInt(prompt("ingrese numero"));
+        num=parseInt(prompt("Ingrese numero:"));
+        num2=parseInt(prompt("Ingrese numero"));
 
-        console.log("Rango selecccionado entre "+ num + " y " +num2);
+        console.log("Rango seleccionado entre "+ num + " y " +num2);
 
 
+
+
+        if(num>num2){
+
+            var aux=num;
+            num=num2;
+            num2=aux;
+        }
 
         while(i<10){
 
         num3= num + Math.random()*((num2-num)+1);
         num3=Math.trunc(num3);
-        numeros= numeros+num3+  "  ,  "+ " .";
+        numeros= numeros+num3+",";
         i++;
         
 
         }console.log(numeros);
-
-
-
-
-
 
 
     </script>
