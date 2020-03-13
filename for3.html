@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        /*numero pares*/
+
+       for (var i = 2; i <= 20; i += 2) {
+
+
+
+            console.log("numeros pares " + i);
+        }
+
+        /*numero impares*/
+
+
+        for (var v = 1; v <= 20; v = v + 2) {
+
+            console.log("numeros impares: "+v);
+        }
+
+
+        
+        /* 10 numeros aleatorios maryores a cero o menores a cero*/
+
+
+
+        var may=0,min=0;
+
+
+        for (var a = 0; a < 10; a++) {
+            var num = -50 + Math.random() * 110;
+            
+           console.log("numero :"+ num);
+
+
+           if(num>0){
+            may++;
+
+           }
+
+           if(num<0){
+            min++;
+
+           }
+                   
+        }console.log("numeros mayores a cero son :"+may);
+        console.log("numero menores a cero son : "+min);
+
+
+
+
+
+
+/* numero aleatorios suma total y promedio*/
+
+        var suma=0;
+
+
+        for (var a = 0; a < 10; a++) {
+            var num =  Math.random() * 11;
+            num=Math.trunc(num);
+           console.log("numero :"+ num);
+
+           suma=suma+num;
+                       
+        }
+
+        promedio= suma/a;
+
+        console.log("La suma es :" +suma);
+        console.log("EL promedio es "+ promedio);
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

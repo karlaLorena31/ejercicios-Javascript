@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        var precio, cantidad, total = 0;
+
+
+        do {
+
+            cantidad = prompt("Ingrese cantidad");
+
+            if (cantidad < 0) {
+
+                while (cantidad < 0) {
+
+                    cantidad = prompt(" Cantidad mal ingresado, ingrese nuevamente: ");
+                    if (cantidad === "exit") {
+                        break;
+                    }
+                    precio = parseInt(precio);
+                }
+
+            }
+            if (cantidad === "exit") {
+
+                break;
+            }
+
+            cantidad = parseInt(cantidad);
+
+            precio = prompt("Ingrese Precio");
+
+            if (precio < 0) {
+
+                while (precio < 0) {
+
+                    precio = prompt(" Precio mal ingresado, ingrese nuevamente: ");
+                    if (precio === "exit") {
+                        break;
+                    }
+                    precio = parseInt(precio);
+                }
+            }
+
+            if (precio === "exit") {
+                break;
+            }
+
+            precio = parseInt(precio);
+
+            if (cantidad >= 0 && precio >= 0) {
+
+
+                console.log("Cantidad: " + cantidad);
+                console.log("Precio: " + precio);
+                total = total + (precio * cantidad);
+                continue;
+
+            }
+
+
+        } while (true);
+
+
+        console.log("Total: " + total);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

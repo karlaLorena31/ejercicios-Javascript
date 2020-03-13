@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var nota, suma = 0, i = 0, promedio;
+
+
+        do {
+
+            nota = (prompt("Ingrese numero"));
+
+            if (nota === "exit") {
+
+                break;
+            }
+
+            if (nota > 0) {
+
+                nota = parseFloat(nota);
+
+                if (nota >= 1 && nota <= 7) {
+                    
+                    console.log("Nota valida   " + nota);
+                    suma = suma + nota;
+                    i++;
+                }
+            }
+
+        } while (nota >= 1 || nota <= 7);
+
+
+        console.log("Numero de notas   " + i);
+        promedio = suma / i;
+
+
+        if (promedio < 4) {
+            console.log("Reprobado: Promedio obtenido es inferior a 4  :" + promedio.toFixed(3));
+
+        } else {
+            console.log("Aprobado: Promedio obtenido es :" + promedio.toFixed(3));
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
