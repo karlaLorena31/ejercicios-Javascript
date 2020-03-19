@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        var numero;      
+
+        for (numero = 2; numero <= 100; numero++) {
+            if (numero === 2 || numero === 3 || numero === 5 || numero === 7) {
+
+                console.log(numero + " es numero primo");
+            } else if ((numero % numero === 0 && numero % 1 === 0) && (numero % 2 !== 0) && (numero % 3 !== 0) && (numero % 5 !== 0) && (numero % 7 !== 0)) {
+
+                console.log(numero + "  es numero primo");
+            } else {
+
+                console.log(numero + " no es numero primo");
+            }
+        }
+
+
+    
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
